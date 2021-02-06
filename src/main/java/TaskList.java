@@ -40,6 +40,17 @@ public class TaskList {
             case "list" :
                 ui.printList(tasks);
                 break;
+            case "find" :
+                System.out.println("Here are the matching items in your list:");
+                int numOfItemsFound = 0;
+                String keyWord = command.getDescription();
+                for(Task task : tasks) {
+                    if(task.toString().contains(keyWord)) {
+                        numOfItemsFound++;
+                        System.out.println("" + numOfItemsFound + "." + task.toString());
+                    }
+                }
+                break;
             default : throw new InvalidCommandException();
         }
         storage.save(tasks);

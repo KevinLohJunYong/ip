@@ -22,6 +22,9 @@ public class Parser {
         else if(inputs[0].equals("event")) {
             return new EventCommand(line);
         }
+        else if(inputs[0].equals("find")) {
+            return new FindCommand(inputs[1]);
+        }
         else throw new InvalidCommandException();
     }
 }
