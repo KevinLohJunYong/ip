@@ -14,14 +14,14 @@
 ##### Example of usage:
 ##### event have fun/at 2
 ##### Expected outcome:
-##### added: [E][] event have fun/at 2
+##### added: [E][] event have fun(at 2)
 
 ### Feature 3 (Add a Deadline)
 ##### adds a deadline task
 ##### Example of usage:
-##### deadline have fun/by 2
+##### deadline have fun/by 3/22/2021 1800
 ##### Expected outcome:
-##### added: [D][] event have fun/by 2
+##### added: [D][] deadline have fun(by 3/22/2021 1800)
 
 ### Feature 4 (Mark a task as done)
 ##### marks task as done
